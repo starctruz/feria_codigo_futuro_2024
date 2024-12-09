@@ -157,6 +157,8 @@ body {
   
   .section {
     margin-bottom: 60px;
+    padding-top: 30px;
+    margin-top: 50px;
   }
   
   .section h2 {
