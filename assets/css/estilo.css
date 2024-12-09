@@ -4,11 +4,42 @@ body {
 nav {
     background-color: darkseagreen;
 }
+.navbar {
+    background-color: blue; 
+    color: aliceblue;
+}
+.title {
+    color: white;
+    font-size: 50px;
+}
+.menu {
+    background-color: rgb(216, 233, 25);
+    display: flex;
+    justify-content: center;
+}
+.menu li {
+    padding: 20px;
+    margin: 10px;
+    list-style: none;
+
+}
+.menu li a {
+    text-decoration: none;
+    background-color: cyan;
+    padding: 20px;
+    border-radius: 20px;
+}
 header{
     background-color: pink;
 }
 main{
     background-color: cornflowerblue;
+}
+#descripcion{
+   background-color: rgb(18, 225, 7); 
+}
+.section {
+    background-color: burlywood;
 }
 section{
     background-color: rgb(74, 196, 233);
