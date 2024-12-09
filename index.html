@@ -2,318 +2,500 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>python y flask</title>
-  <link rel="stylesheet" href="assets/css/estilo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>python y flask</title>
+    <link rel="stylesheet" href="assets/css/estilo.css">
 
 </head>
 
 <body>
-  <!-- seccion navegacion -->
-  <nav class="navbar">
-    <div class="title">Código Futuro</div>
-    <ul class="menu">
-      <li><a href="#descripcion">Descripción</a></li>
-      <li><a href="#competencias">Competencias</a></li>
-      <li><a href="#objetivos">Objetivos</a></li>
-      <li><a href="#infografia">Infografía</a></li>
-      <li><a href="#flask-python">Python y Flask</a></li>
-    </ul>
-  </nav>
-  <!-- para el slide -->
-  <header>
-
-
-    <!-- Carrusel -->
-    <div class="carousel">
-      <!-- Botones de radio para seleccionar la imagen -->
-      <input type="radio" name="radio-btn" id="radio1" checked="">
-      <input type="radio" name="radio-btn" id="radio2">
-      <input type="radio" name="radio-btn" id="radio3">
-      <input type="radio" name="radio-btn" id="radio4">
-      <input type="radio" name="radio-btn" id="radio5">
-
-      <!-- Imágenes del carrusel -->
-      <div class="carousel-inner">
-        <div class="carousel-item">
-          <img src="assets/img/python.png" alt="Imagen 1">
-        </div>
-        <div class="carousel-item">
-          <img src="assets/img/flask.png" alt="Imagen 2">
-        </div>
-        <div class="carousel-item">
-          <img src="assets/img/python.png" alt="Imagen 3">
-        </div>
-        <div class="carousel-item">
-          <img src="assets/img/flask.png" alt="Imagen 4">
-        </div>
-        <div class="carousel-item">
-          <img src="assets/img/python.png" alt="Imagen 5">
-        </div>
-      </div>
-
-      <!-- Controles manuales -->
-      <div class="navigation-manual">
-        <label for="radio1" class="manual-btn"></label>
-        <label for="radio2" class="manual-btn"></label>
-        <label for="radio3" class="manual-btn"></label>
-        <label for="radio4" class="manual-btn"></label>
-        <label for="radio5" class="manual-btn"></label>
-      </div>
-    </div>
-    <h1>Curso 2: Introducción a Python y desarrollo web con Flask</h1>
-    <p>Team Liceo Industrial</p>
-  </header>
-  <!-- seccion princi´pal -->
-  <main>
-    <!-- introducción a python-->
-
-    <section class="section" id="introduccion">
-      <h2> Introducción a Python</h2>
-      <p><strong>Descripción resumida:</strong></p>
-      <p> Python es un lenguaje de programación de alto nivel, interpretado
-        y de propósito general. Es conocido por su sintaxis clara y legible, lo que lo hace accesible para
-        principiantes pero también poderoso para desarrolladores experimentados. Python es utilizado en
-        diversas áreas como desarrollo web, análisis de datos, inteligencia artificial, automatización, etc.</p>
-      <div class="highlight">
-        <p><strong>Conceptos Clave::</strong>
-        </p>
-        <ul>
-          <li>
-            <p><strong>Sintaxis básica: </strong>Variables, operadores, estructuras de control (if, loops).</p>
-          </li>
-          <li>
-            <p><strong>Funciones: </strong>Definición, parámetros, retorno de valores.</p>
-          </li>
-          <li>
-            <p><strong>Estructuras de datos: </strong>Listas, diccionarios, tuplas y sets.</p>
-          </li>
-          <li>
-            <p><strong> Manejo de errores:</strong>: Excepciones y try-except.</p>
-          </li>
-          <li>
-            <p><strong>Librerías y módulos:</strong>Uso de bibliotecas estándar de Python, como math, os, sys, y cómo
-              instalar paquetes externos mediante pip.</p>
-          </li>
+    <!-- seccion navegacion -->
+    <nav class="navbar">
+        <div class="title">Código Futuro</div>
+        <ul class="menu">
+            <li><a href="#introduccion">Introduccion</a></li>
+            <li><a href="#desarrolloweb">Desarrollo Web Con Flask</a></li>
+            <li><a href="#arquitectura">Arquitectura y Fundamentos</a></li>
+            <li><a href="#ruta">Ruta De Aprendizaje</a></li>
+            <li><a href="#contacto">Contacto</a></li>
         </ul>
-      </div>
-    </section>
-
-    <!-- desarrollo web con flask -->
-    <section class="section" id="desarrollo web">
-      <h2>Desarrollo Web con Flask
-      </h2>
-      <p><strong>Descripción resumida:</strong></p>
-      <p>Flask es un microframework para desarrollar aplicaciones web con Python. Es "micro" porque proporciona lo
-        esencial para el desarrollo web pero permite al programador agregar extensiones y herramientas adicionales según
-        lo necesite.
-      </p>
-      <div class="highlight">
-        <p><strong>Conceptos Clave::</strong>
-        </p>
-        <ul>
-          <li>
-            <p><strong>Rutas (Routes): </strong>Las rutas definen cómo los usuarios interactúan con la aplicación web,
-              asociando URLs a funciones específicas.
-            </p>
-          </li>
-          <li>
-            <p><strong>Vistas (Views): </strong>Las vistas son las funciones que responden a las solicitudes HTTP y
-              generan las respuestas que serán enviadas al navegador.</p>
-          </li>
-          <li>
-            <p><strong>Plantillas (Templates): </strong>Flask usa el motor de plantillas Jinja2 para renderizar HTML
-              dinámicamente.</p>
-          </li>
-          <li>
-            <p><strong> Formularios y Datos del Usuario:</strong>:Flask facilita la obtención y procesamiento de datos
-              enviados por los usuarios, ya sea a través de formularios o de métodos GET y POST. </p>
-          </li>
-          <li>
-            <p><strong>Bases de datos:</strong>Flask permite integrarse con bases de datos (como SQLite, MySQL,
-              PostgreSQL) para almacenar y recuperar información.</p>
-          </li>
-        </ul>
-      </div>
-    </section>
+    </nav>
+    <!-- para el slide -->
+    <header>
 
 
+        <!-- Carrusel -->
+        <div class="carousel">
+            <!-- Botones de radio para seleccionar la imagen -->
+            <input type="radio" name="radio-btn" id="radio1" checked="">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <input type="radio" name="radio-btn" id="radio5">
 
+            <!-- Imágenes del carrusel -->
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="assets/img/python.png" alt="Imagen 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/flask.png" alt="Imagen 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/python.png" alt="Imagen 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/flask.png" alt="Imagen 4">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/python.png" alt="Imagen 5">
+                </div>
+            </div>
 
-
-
-    <!-- Arquitectura y fundamentos  -->
-    <section class="section" id="Arquitectura_Fundamentos">
-      <h2>Arquitectura y Fundamentos</h2>
-      <p><strong>Descripción resumida:</strong></p>
-      <p>Para comprender mejor Flask, es útil entender los conceptos fundamentales de desarrollo web:</p>
-      <div class="highlight">
-        <p><strong>Modelo-Vista-Controlador (MVC):</strong> Este patrón organiza el código en tres componentes.</p>
-        <ul>
-          <li>
-            <p><strong>Modelo:</strong> Datos y la lógica para interactuar con las bases de datos.
-            </p>
-          </li>
-          <li>
-            <p><strong>Vista:</strong>La interfaz de usuario (generalmente HTML).</p>
-          </li>
-          <li>
-            <p><strong>Controlador:</strong>Lógica que maneja la entrada del usuario y dirige las acciones a los modelos
-              y vistas.
-            </p>
-          </li>
-          <li>
-            <p><strong>HTTP: </strong> Protocolo de transferencia de hipertexto que es la base de las aplicaciones web.
-              Comprender cómo funcionan las solicitudes (GET, POST, etc.) y respuestas HTTP es esencial para trabajar
-              con Flask.</p>
-          </li>
-          <li>
-            <p><strong>RESTful APIs:</strong>Flask también permite crear APIs RESTful, que son esenciales para construir
-              aplicaciones web modernas.
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-
-
-    <!-- Ruta de Aprendizaje: Introducción a Python y Desarrollo Web con Flask -->
-    <h1>Ruta de Aprendizaje: Introducción a Python y Desarrollo Web con Flask</h1>
-    <!-- Fase 1 -->
-    <section class="section" id="fase1">
-      <h2> Fase 1: Fundamentos de Python</h2>
-      <article>
-        <div>
-          <p><strong>Configuración del entorno de desarrollo:</strong></p>
-          <div class="highlight">
-            <ul>
-              <li>
-                <p>Instalar Python.</p>
-              </li>
-              <li>
-                <p>Usar un editor de texto o IDE (como VSCode, PyCharm o Jupyter Notebooks).</p>
-              </li>
-              <li>
-                <p>Instalar y configurar pip para gestionar dependencias</p>
-              </li>
-            </ul>
-          </div>
+            <!-- Controles manuales -->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+                <label for="radio5" class="manual-btn"></label>
+            </div>
         </div>
+        <h1>Curso 2: Introducción a Python y desarrollo web con Flask</h1>
+        <p>Team Liceo Industrial</p>
+    </header>
+    <!-- seccion princi´pal -->
+    <main>
+        <!-- introducción a python-->
 
-      </article>
-      <article>
-        <div>
-          <p><strong>Sintaxis básica de Python:</strong></p>
-          <div class="highlight">
-            <ul>
-              <li>
-                <p>Variables y tipos de datos.</p>
-              </li>
-              <li>
-                <p>Operadores aritméticos y lógicos.</p>
-              </li>
-              <li>
-                <p>Estructuras de control: if, else, elif, bucles for, while.
+        <section class="section" id="introduccion">
+            <h2> Introducción a Python</h2>
+            <p><strong>Descripción resumida:</strong></p>
+            <p> Python es un lenguaje de programación de alto nivel, interpretado
+                y de propósito general. Es conocido por su sintaxis clara y legible, lo que lo hace accesible para
+                principiantes pero también poderoso para desarrolladores experimentados. Python es utilizado en
+                diversas áreas como desarrollo web, análisis de datos, inteligencia artificial, automatización, etc.</p>
+            <div class="highlight">
+                <p><strong>Conceptos Clave::</strong>
                 </p>
-              </li>
-            </ul>
-          </div>
-        </div>
+                <ul>
+                    <li>
+                        <p><strong>Sintaxis básica: </strong>Variables, operadores, estructuras de control (if, loops).
+                        </p>
+                    </li>
+                    <li>
+                        <p><strong>Funciones: </strong>Definición, parámetros, retorno de valores.</p>
+                    </li>
+                    <li>
+                        <p><strong>Estructuras de datos: </strong>Listas, diccionarios, tuplas y sets.</p>
+                    </li>
+                    <li>
+                        <p><strong> Manejo de errores:</strong>: Excepciones y try-except.</p>
+                    </li>
+                    <li>
+                        <p><strong>Librerías y módulos:</strong>Uso de bibliotecas estándar de Python, como math, os,
+                            sys, y cómo
+                            instalar paquetes externos mediante pip.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
-      </article>
-      <article>
-        <div>
-          <p><strong>Funciones:</strong></p>
-          <div class="highlight">
-            <ul>
-              <li>
-                <p>Definición de funciones.</p>
-              </li>
-              <li>
-                <p>Parámetros, argumentos y valor de retorno.</p>
-              </li>
-              <li>
-                <p>Funciones lambda (funciones anónimas).</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-      </article>
-      <article>
-        <div>
-          <p><strong>Estructuras de datos:</strong></p>
-          <div class="highlight">
-            <ul>
-              <li>
-                <p>Listas, diccionarios, tuplas, sets</p>
-              </li>
-              <li>
-                <p>Métodos comunes para manipular estas estructuras (agregar, eliminar, acceder, etc.).
+        <!-- desarrollo web con flask -->
+        <section class="section" id="desarrolloweb">
+            <h2>Desarrollo Web con Flask
+            </h2>
+            <p><strong>Descripción resumida:</strong></p>
+            <p>Flask es un microframework para desarrollar aplicaciones web con Python. Es "micro" porque proporciona lo
+                esencial para el desarrollo web pero permite al programador agregar extensiones y herramientas
+                adicionales según
+                lo necesite.
+            </p>
+            <div class="highlight">
+                <p><strong>Conceptos Clave::</strong>
                 </p>
-              </li>
-            
-            </ul>
-          </div>
-        </div>
+                <ul>
+                    <li>
+                        <p><strong>Rutas (Routes): </strong>Las rutas definen cómo los usuarios interactúan con la
+                            aplicación web,
+                            asociando URLs a funciones específicas.
+                        </p>
+                    </li>
+                    <li>
+                        <p><strong>Vistas (Views): </strong>Las vistas son las funciones que responden a las solicitudes
+                            HTTP y
+                            generan las respuestas que serán enviadas al navegador.</p>
+                    </li>
+                    <li>
+                        <p><strong>Plantillas (Templates): </strong>Flask usa el motor de plantillas Jinja2 para
+                            renderizar HTML
+                            dinámicamente.</p>
+                    </li>
+                    <li>
+                        <p><strong> Formularios y Datos del Usuario:</strong>:Flask facilita la obtención y
+                            procesamiento de datos
+                            enviados por los usuarios, ya sea a través de formularios o de métodos GET y POST. </p>
+                    </li>
+                    <li>
+                        <p><strong>Bases de datos:</strong>Flask permite integrarse con bases de datos (como SQLite,
+                            MySQL,
+                            PostgreSQL) para almacenar y recuperar información.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
-      </article>
-      <article>
+
+
+
+
+
+        <!-- Arquitectura y fundamentos  -->
+        <section class="section" id="arquitectura">
+            <h2>Arquitectura y Fundamentos</h2>
+            <p><strong>Descripción resumida:</strong></p>
+            <p>Para comprender mejor Flask, es útil entender los conceptos fundamentales de desarrollo web:</p>
+            <div class="highlight">
+                <p><strong>Modelo-Vista-Controlador (MVC):</strong> Este patrón organiza el código en tres componentes.
+                </p>
+                <ul>
+                    <li>
+                        <p><strong>Modelo:</strong> Datos y la lógica para interactuar con las bases de datos.
+                        </p>
+                    </li>
+                    <li>
+                        <p><strong>Vista:</strong>La interfaz de usuario (generalmente HTML).</p>
+                    </li>
+                    <li>
+                        <p><strong>Controlador:</strong>Lógica que maneja la entrada del usuario y dirige las acciones a
+                            los modelos
+                            y vistas.
+                        </p>
+                    </li>
+                    <li>
+                        <p><strong>HTTP: </strong> Protocolo de transferencia de hipertexto que es la base de las
+                            aplicaciones web.
+                            Comprender cómo funcionan las solicitudes (GET, POST, etc.) y respuestas HTTP es esencial
+                            para trabajar
+                            con Flask.</p>
+                    </li>
+                    <li>
+                        <p><strong>RESTful APIs:</strong>Flask también permite crear APIs RESTful, que son esenciales
+                            para construir
+                            aplicaciones web modernas.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+
+        <!-- Ruta de Aprendizaje: Introducción a Python y Desarrollo Web con Flask -->
+        <h1 id="ruta">Ruta de Aprendizaje: Introducción a Python y Desarrollo Web con Flask</h1>
+        <!-- Fase 1 -->
+        <section class="section" id="fase1">
+            <h2> Fase 1: Fundamentos de Python</h2>
+            <article>
+                <div>
+                    <p><strong>Configuración del entorno de desarrollo:</strong></p>
+                    <div class="highlight">
+                        <ul>
+                            <li>
+                                <p>Instalar Python.</p>
+                            </li>
+                            <li>
+                                <p>Usar un editor de texto o IDE (como VSCode, PyCharm o Jupyter Notebooks).</p>
+                            </li>
+                            <li>
+                                <p>Instalar y configurar pip para gestionar dependencias</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </article>
+            </article>
+            <article>
+                <div>
+                    <p><strong>Sintaxis básica de Python:</strong></p>
+                    <div class="highlight">
+                        <ul>
+                            <li>
+                                <p>Variables y tipos de datos.</p>
+                            </li>
+                            <li>
+                                <p>Operadores aritméticos y lógicos.</p>
+                            </li>
+                            <li>
+                                <p>Estructuras de control: if, else, elif, bucles for, while.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </article>
+            <article>
+                <div>
+                    <p><strong>Funciones:</strong></p>
+                    <div class="highlight">
+                        <ul>
+                            <li>
+                                <p>Definición de funciones.</p>
+                            </li>
+                            <li>
+                                <p>Parámetros, argumentos y valor de retorno.</p>
+                            </li>
+                            <li>
+                                <p>Funciones lambda (funciones anónimas).</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </article>
+            <article>
+                <div>
+                    <p><strong>Estructuras de datos:</strong></p>
+                    <div class="highlight">
+                        <ul>
+                            <li>
+                                <p>Listas, diccionarios, tuplas, sets</p>
+                            </li>
+                            <li>
+                                <p>Métodos comunes para manipular estas estructuras (agregar, eliminar, acceder, etc.).
+                                </p>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </article>
+            <article>
+                <div>
+                    <p><strong>Manejo de excepciones:
+                        </strong></p>
+                    <div class="highlight">
+                        <ul>
+                            <li>
+                                <p>Uso de try, except, finally.</p>
+                            </li>
+                            <li>
+                                <p>Excepciones personalizadas.</p>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </article>
+            <article>
+                <div>
+                    <p><strong>Trabajo con módulos y librerías:</strong></p>
+                    <div class="highlight">
+                        <ul>
+                            <li>
+                                <p>Uso de módulos estándar de Python (math, os, sys).</p>
+                            </li>
+                            <li>
+                                <p>Instalación de paquetes externos con pip (por ejemplo, requests, flask)</p>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- Fase 2 -->
+        <section class="section" id="fase1">
+            <h2> Fase 2: Desarrollo Web con Flask</h2>
+            <article>
+                <div>
+                    <p><strong>Instalación y configuración de Flask</strong></p>
+                    <div class="highlight">
+                        <ul>
+                            <li>
+                                <p>Crear un entorno virtual con venv o virtualenv.
+                                </p>
+                            </li>
+                            <li>
+                                <p>Instalar Flask: pip install flask.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </article>
+            <article>
+                <div>
+                    <p><strong>Creación de la primera aplicación Flask:</strong></p>
+                    <div class="highlight">
+                        <ul>
+                            <li>
+                                <p>Configuración básica de un servidor Flask.</p>
+                            </li>
+                            <li>
+                                <p>Definir una ruta simple con el decorador @app.route.
+                                </p>
+                            </li>
+                            <li>
+                                <p>Renderizar un mensaje estático en el navegador.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </article>
+            <article>
+                <div>
+                    <p><strong>Rutas y Vistas en Flask:</strong></p>
+                    <div class="highlight">
+                        <ul>
+                            <li>
+                                <p>Creación de múltiples rutas para diferentes páginas</p>
+                            </li>
+                            <li>
+                                <p>Manejo de parámetros en las URLs (por ejemplo, /user/<username>).</p>
+                            </li>
+                            <li>
+                                <p>Renderización de vistas dinámicas con Jinja2.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </article>
+            <article>
+                <div>
+                    <p><strong>Manejo de formularios y datos de usuario:</strong></p>
+                    <div class="highlight">
+                        <ul>
+                            <li>
+                                <p>Crear formularios HTML.</p>
+                            </li>
+                            <li>
+                                <p>Procesar datos con Flask utilizando los métodos request.form o request.args.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </article>
+            <article>
+                <div>
+                    <p><strong>Uso de plantillas con Jinja2:</strong></p>
+                    <div class="highlight">
+                        <ul>
+                            <li>
+                                <p>Cómo crear plantillas HTML y usar variables dentro de ellas.</p>
+                            </li>
+                            <li>
+                                <p>Incluir condicionales y bucles dentro de las plantillas</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </article>
+            <article>
+                <div>
+                    <p><strong>Manejo de sesiones y cookies:</strong></p>
+                    <div class="highlight">
+                        <ul>
+                            <li>
+                                <p>Uso de session para almacenar información temporal.
+                                </p>
+                            </li>
+                            <li>
+                                <p>Trabajar con cookies para mantener el estado entre solicitudes.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </article>
+            <article>
+                <div>
+                    <p><strong>Integración con bases de datos (Opcional):</strong></p>
+                    <div class="highlight">
+                        <ul>
+                            <li>Uso de SQLite con Flask.</p>
+                            </li>
+                            <li>
+                                <p>Creación de modelos de base de datos y consultas.</p>
+                            </li>
+                            <li>
+                                <p>Flask-SQLAlchemy para interactuar con bases de datos de manera más fácil.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </article>
+            <article>
+                <div>
+                    <p><strong>Desarrollo de una API RESTful básica:</strong></p>
+                    <div class="highlight">
+                        <ul>
+                            <li>
+                                <p>Crear rutas que respondan con datos en formato JSON.</p>
+                            </li>
+                            <li>
+                                <p>Manejo de solicitudes GET, POST, PUT, DELETE.</p>
+                            </li>
+                            <li>
+                                <p>Usar Flask-RESTful para simplificar la creación de APIs.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </article>
+            <article>
+                <div>
+                    <p><strong>Despliegue de la aplicación web:</strong></p>
+                    <div class="highlight">
+                        <ul>
+                            <li>
+                                <p>Uso de un servidor WSGI como Gunicorn para ejecutar Flask en producción.</p>
+                            </li>
+                            <li>
+                                <p>Despliegue en plataformas como Heroku o PythonAnywhere.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </article>
+        </section>
+
+
+    </main>
+
+    <!-- seccion pie de pagina -->
+    <footer id="contacto">
+        <p>Todos los Derechos reservados</p>
         <div>
-          <p><strong>Manejo de excepciones:
-        </strong></p>
-          <div class="highlight">
-            <ul>
-              <li>
-                <p>Uso de try, except, finally.</p>
-              </li>
-              <li>
-                <p>Excepciones personalizadas.</p>
-              </li>
-              
-            </ul>
-          </div>
+            <p>Desarrollado Por:</p>
+            <a href="http://github.com/starctruz" target="_blank" rel="noopener noreferrer">Estrella Cruz</a>
+            <a href="http://github.com/benjamon999" target="_blank" rel="noopener noreferrer">Benjamin Huidobro</a>
         </div>
 
-      </article>
-      <article>
-        <div>
-          <p><strong>Trabajo con módulos y librerías:</strong></p>
-          <div class="highlight">
-            <ul>
-              <li>
-                <p>Uso de módulos estándar de Python (math, os, sys).</p>
-              </li>
-              <li>
-                <p>Instalación de paquetes externos con pip (por ejemplo, requests, flask)</p>
-              </li>
-             
-            </ul>
-          </div>
-        </div>
 
-      </article>
-
-    </section>
-
-
-
-
-  </main>
-
-  <!-- seccion pie de pagina -->
-  <footer>
-    <p>Todos los Derechos reservados</p>
-    <div>
-      <p>Desarrollado Por:</p>
-      <a href="http://github.com/starctruz" target="_blank" rel="noopener noreferrer">Estrella</a>
-      <a href="http://github.com/benjamon999" target="_blank" rel="noopener noreferrer">Benjamin</a>
-    </div>
-    <a href="https://docs.google.com/document/d/1Ue9J2q4mcLzAkfNcUxgzn4Om4PFdss4zH2udckDy-aM/edit?usp=sharing"> Texto
-      pagina</a>
-  </footer>
+        <a href="https://docs.google.com/document/d/1Ue9J2q4mcLzAkfNcUxgzn4Om4PFdss4zH2udckDy-aM/edit?usp=sharing">
+            Texto
+            pagina</a>
+    </footer>
 
 
 </body>
