@@ -1,3 +1,72 @@
+
+/* Estilos base */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #fff;
+    color: #5D8590;
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+  }
+  
+  /* Navbar */
+  .navbar {
+    background: #eb5f33;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar ul li {
+    margin: 0 15px;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  .navbar ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  /* Header */
+  header {
+    background: linear-gradient(to right, #eb5f33, #5D8590);
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    margin: 10px 0 30px;
+}
 /* Carrusel */
 .carousel {
     width: 100%;
@@ -247,4 +316,4 @@
     main {
       padding: 10px;
     }
-  }
+}
