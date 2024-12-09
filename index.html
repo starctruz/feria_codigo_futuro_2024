@@ -8,45 +8,122 @@
 </head>
 <body>
     <!-- seccion navegacion -->
-<nav>
-    <ul>
-        <li><a href="#header"> Inicio </a></li>
-        <li><a href="#main"> Principal </a></li>
-        <li><a href="#contacto"> Contacto </a></li>
-    </ul>
-</nav>
+    <nav class="navbar">
+        <div class="title">Código Futuro</div>
+        <ul>
+          <li><a href="#descripcion">Descripción</a></li>
+          <li><a href="#competencias">Competencias</a></li>
+          <li><a href="#objetivos">Objetivos</a></li>
+          <li><a href="#infografia">Infografía</a></li>
+          <li><a href="#flask-python">Python y Flask</a></li>
 <!-- para el slide -->
 <header>
-    <img src="" alt="">
-</header>
 
+
+    <!-- Carrusel -->
+    <div class="carousel">
+      <!-- Botones de radio para seleccionar la imagen -->
+      <input type="radio" name="radio-btn" id="radio1" checked="">
+      <input type="radio" name="radio-btn" id="radio2">
+      <input type="radio" name="radio-btn" id="radio3">
+      <input type="radio" name="radio-btn" id="radio4">
+      <input type="radio" name="radio-btn" id="radio5">
+
+      <!-- Imágenes del carrusel -->
+      <div class="carousel-inner">
+        <div class="carousel-item">
+          <img src="assets/img/python.png" alt="Imagen 1">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/flask.png" alt="Imagen 2">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/python.png" alt="Imagen 3">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/flask.png" alt="Imagen 4">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/python.png" alt="Imagen 5">
+        </div>
+      </div>
+
+      <!-- Controles manuales -->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+        <label for="radio5" class="manual-btn"></label>
+      </div>
+    </div>
+    <h1>Curso 2: Introducción a Python y desarrollo web con Flask</h1>
+    <p>Team Liceo Industrial</p>
+  </header>
 <!-- seccion princi´pal -->
 <main>
-    <h1> Python Y Flask </h1>
-    <section>
-        <article>
-            <h4></h4>
-        </article>
+    <!-- Descripción -->
+
+    <section class="section" id="descripcion">
+      <h2>Descripción</h2>
+      <p><strong>Descripción resumida:</strong></p>
+      <p>¡Ahora vamos a hacer un sistema! Para lograrlo usaremos Python y Flask. Trabajaremos en equipo utilizando
+        GitHub para una experiencia colaborativa emocionante.</p>
+      <div class="highlight">
+        <p><strong>Descripción larga:</strong> Vamos a desarrollar un sistema utilizando Python, un lenguaje de
+          programación orientado a objetos. Usaremos Flask para hacer más eficiente el desarrollo y trabajaremos en
+          equipo con GitHub, una plataforma que facilita la colaboración y el control de versiones.</p>
+      </div>
     </section>
 
-    <section>
-        <article>
-            <h4></h4>
-        </article>
+    <!-- Competencias -->
+    <section class="section" id="competencias">
+      <h2>Competencias</h2>
+      <ul>
+        <li>Construir códigos eficientes y organizados para resolver problemas.</li>
+        <li>Desarrollar habilidades de programación y pensamiento computacional.</li>
+        <li>Aprender a usar herramientas como Python, GitHub, APIs y Flask.</li>
+      </ul>
     </section>
 
-    <section>
-        <article>
-            <h4></h4>
-        </article>
+    <!-- Objetivos de aprendizaje -->
+    <section class="section" id="objetivos">
+      <h2>Objetivos de aprendizaje</h2>
+      <ul>
+        <li>Crear funciones reutilizables, legibles y mantenibles.</li>
+        <li>Estructurar programas de forma modular y escalable.</li>
+        <li>Entender la programación orientada a objetos (POO).</li>
+        <li>Utilizar Git y GitHub de manera efectiva.</li>
+        <li>Consumir APIs para extraer datos externos.</li>
+        <li>Desarrollar aplicaciones web básicas con Flask.</li>
+      </ul>
     </section>
 
-    <section>
-        <article>
-            <h4></h4>
-        </article>
+    <!-- Infografía -->
+    <section class="section" id="infografia">
+      <h2>Infografía</h2>
+      <div class="highlight">
+        <p><strong>¿Qué es un lenguaje de programación?</strong> Es un conjunto de reglas que permiten escribir
+          instrucciones para que las computadoras las ejecuten. Ejemplos incluyen Python, Java, y C++.</p>
+      </div>
+      <div class="highlight">
+        <img src="assets/img/python.png" alt="">
+        <p><strong>¿Qué es Python?</strong> Un lenguaje de alto nivel, fácil de aprender, versátil y ampliamente
+          utilizado en desarrollo web, análisis de datos e inteligencia artificial.</p>
+      </div>
+      <div class="highlight">
+        <p><strong>¿Qué es GitHub?</strong> Una plataforma que permite almacenar y colaborar en proyectos de software,
+          con control de versiones y herramientas para equipos de trabajo.</p>
+      </div>
     </section>
-</main>
+
+    <!-- Python y Flask -->
+    <section class="section" id="flask-python">
+      <h2>Python y Flask</h2>
+      <p>Flask es un microframework para Python que permite crear aplicaciones web rápidamente, con características como
+        flexibilidad, simplicidad y extensibilidad. Ideal para proyectos pequeños y medianos.</p>
+    </section>
+  </main>
 
 <!-- seccion pie de pagina -->
 <footer>
