@@ -229,6 +229,11 @@ body {
     .manual-btn {
       padding: 10px;
     }
+
+    .section{
+        padding-top: 30px;
+        margin-top: 50px;
+    }
   
     .section h2 {
       font-size: 2.5rem;
@@ -266,7 +271,12 @@ body {
     .manual-btn {
       padding: 8px;
     }
-  
+
+    .section{
+        padding-top: 30px;
+        margin-top: 50px;
+    }
+
     .section h2 {
       font-size: 2.2rem;
     }
@@ -309,6 +319,11 @@ body {
       padding: 5px;
     }
   
+    .section{
+        padding-top: 30px;
+        margin-top: 50px;
+    }
+
     .section h2 {
       font-size: 2rem;
     }
