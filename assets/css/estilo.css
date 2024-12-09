@@ -1,51 +1,321 @@
+
+/* Estilos base */
 body {
-    background-color: rgb(255, 173, 119);
-}
-nav {
-    background-color: darkseagreen;
-}
-.navbar {
-    background-color: blue; 
-    color: aliceblue;
-}
-.title {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #fff;
+    color: #5D8590;
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+  }
+  
+  /* Navbar */
+  .navbar {
+    background: #eb5f33;
     color: white;
-    font-size: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar ul li {
+    margin: 0 15px;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  .navbar ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  /* Header */
+  header {
+    background: linear-gradient(to right, #eb5f33, #5D8590);
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    margin: 10px 0 30px;
 }
-.menu {
-    background-color: rgb(216, 233, 25);
+/* Carrusel */
+.carousel {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-top: 40px;
+  }
+  
+  .carousel-inner {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item {
+    width: 100%;
+    flex-shrink: 0;
     display: flex;
     justify-content: center;
-}
-.menu li {
+    align-items: center;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  .navigation-manual {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    bottom: 20px;
+  }
+  
+  .manual-btn {
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin: 0 10px;
+    background: rgba(255, 255, 255, 0.5);
+  }
+  
+  .manual-btn:hover {
+    background: white;
+  }
+  
+  #radio1:checked ~ .carousel-inner {
+    transform: translateX(0%);
+  }
+  
+  #radio2:checked ~ .carousel-inner {
+    transform: translateX(-100%);
+  }
+  
+  #radio3:checked ~ .carousel-inner {
+    transform: translateX(-200%);
+  }
+  
+  #radio4:checked ~ .carousel-inner {
+    transform: translateX(-300%);
+  }
+  
+  #radio5:checked ~ .carousel-inner {
+    transform: translateX(-400%);
+  }
+  
+  input[type="radio"]:checked + .carousel-inner + .navigation-manual label {
+    background-color: white;
+  }
+  
+  /* Main */
+  main {
+    max-width: 1200px;
+    margin: 40px auto;
     padding: 20px;
-    margin: 10px;
+  }
+  
+  .section {
+    margin-bottom: 60px;
+  }
+  
+  .section h2 {
+    color: #eb5f33;
+    font-size: 2rem;
+    border-bottom: 3px solid #eb5f33;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .section p,
+  .section ul {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  ul {
     list-style: none;
-
-}
-.menu li a {
-    text-decoration: none;
-    background-color: cyan;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  ul li:before {
+    content: '●';
+    color: #eb5f33;
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+  }
+  
+  /* Highlight box */
+  .highlight {
+    background: #f9f9f9;
+    padding: 15px;
+    border-left: 5px solid #eb5f33;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Footer */
+  footer {
+    background: #5D8590;
+    color: white;
+    text-align: center;
     padding: 20px;
-    border-radius: 20px;
-}
-header{
-    background-color: pink;
-}
-main{
-    background-color: cornflowerblue;
-}
-#descripcion{
-   background-color: rgb(18, 225, 7); 
-}
-.section {
-    background-color: burlywood;
-}
-section{
-    background-color: rgb(74, 196, 233);
-}
-footer{
-    background-color: darkseagreen;
+    margin-top: 40px;
+  }
+  
+  /* Estilos Responsivos */
+  
+  /* Para pantallas grandes (escritorio) */
+  @media (min-width: 1024px) {
+    header h1 {
+      font-size: 3rem;
+    }
+  
+    header p {
+      font-size: 1.5rem;
+    }
+  
+    .carousel-item img {
+      max-height: 600px;
+    }
+  
+    .manual-btn {
+      padding: 10px;
+    }
+  
+    .section h2 {
+      font-size: 2.5rem;
+    }
+  }
+  
+  /* Para pantallas medianas (tabletas) */
+  @media (max-width: 1023px) and (min-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar ul {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .navbar ul li {
+      margin: 10px 0;
+    }
+  
+    header h1 {
+      font-size: 2.2rem;
+    }
+  
+    header p {
+      font-size: 1.3rem;
+    }
+  
+    .carousel-item img {
+      max-height: 400px;
+    }
+  
+    .manual-btn {
+      padding: 8px;
+    }
+  
+    .section h2 {
+      font-size: 2.2rem;
+    }
+  }
+  
+  /* Para pantallas pequeñas (móviles) */
+  @media (max-width: 767px) {
+    .navbar {
+      padding: 10px;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .navbar ul {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .navbar ul li {
+      margin: 5px 0;
+    }
+  
+    header {
+      padding: 20px;
+    }
+  
+    header h1 {
+      font-size: 1.8rem;
+    }
+  
+    header p {
+      font-size: 1rem;
+    }
+  
+    .carousel-item img {
+      max-height: 300px;
+    }
+  
+    .manual-btn {
+      padding: 5px;
+    }
+  
+    .section h2 {
+      font-size: 2rem;
+    }
+  
+    main {
+      padding: 10px;
+    }
 }
 
 /* Carrusel */
