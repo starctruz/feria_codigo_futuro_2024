@@ -53,82 +53,77 @@
                 </div>
             </div>
 
-            <!-- Controles manuales -->
-            <div class="navigation-manual">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-                <label for="radio3" class="manual-btn"></label>
-                <label for="radio4" class="manual-btn"></label>
-                <label for="radio5" class="manual-btn"></label>
-            </div>
-        </div>
-        <h1>Curso 2: Introducción a Python y desarrollo web con Flask</h1>
-        <p>Team Liceo Industrial</p>
-    </header>
-    <!-- seccion princi´pal -->
-    <main>
-        <!-- introducción a python-->
+      <!-- Controles manuales -->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+        <label for="radio5" class="manual-btn"></label>
+      </div>
+    </div>
+    <h1>Curso 2: Introducción a Python y desarrollo web con Flask</h1>
+    <p>Team Liceo Industrial</p>
+  </header>
+<!-- seccion princi´pal -->
+<main>
+    <!-- Introduccion a python -->
 
-        <section class="section" id="introduccion">
-            <h2> Introducción a Python</h2>
-            <p><strong>Descripción resumida:</strong></p>
-            <p> Python es un lenguaje de programación de alto nivel, interpretado
-                y de propósito general. Es conocido por su sintaxis clara y legible, lo que lo hace accesible para
-                principiantes pero también poderoso para desarrolladores experimentados. Python es utilizado en
-                diversas áreas como desarrollo web, análisis de datos, inteligencia artificial, automatización, etc.</p>
-            <div class="highlight">
-                <p><strong>Conceptos Clave::</strong>
-                </p>
-                <ul>
-                    <li>
-                        <p><strong>Sintaxis básica: </strong>Variables, operadores, estructuras de control (if, loops).</p>
-                    </li>
-                    <li>
-                        <p><strong>Funciones: </strong>Definición, parámetros, retorno de valores.</p>
-                    </li>
-                    <li>
-                        <p><strong>Estructuras de datos: </strong>Listas, diccionarios, tuplas y sets.</p>
-                    </li>
-                    <li>
-                        <p><strong> Manejo de errores:</strong>: Excepciones y try-except.</p>
-                    </li>
-                    <li>
-                        <p><strong>Librerías y módulos:</strong>Uso de bibliotecas estándar de Python, como math, os, sys, y cómo instalar paquetes externos mediante pip.</p>
-                    </li>
-                </ul>
-            </div>
-        </section>
+    <section class="section" id="Introducción">
+      <h2>Introducción a Python</h2>
+      <p><strong>Descripción resumida:</strong></p>
+      <p>Python es un lenguaje de programación de alto nivel, interpretado y de propósito general. Es conocido por su sintaxis clara y legible, lo que lo hace accesible para principiantes pero también poderoso para desarrolladores experimentados. Python es utilizado en diversas áreas como desarrollo web, análisis de datos, inteligencia artificial, automatización, etc.</p>
+      <div class="highlight">
+        <p><strong>Conceptos Clave:</strong> </p>
+        <ul>
+            <li>
+                <p><strong>Sintaxis básica:</strong> Variables, operadores, estructuras de control (if, loops).</p>
+            </li>
+            <li>
+                <p><strong>Funciones:</strong>Definición, parámetros, retorno de valores.</p>
+            </li>
+            <li>
+                <p><strong>Estructuras de datos:</strong>Listas, diccionarios, tuplas y sets.</p>
+            </li>
+            <li>
+                <p><strong>Manejo de errores:</strong>Excepciones y try-except.</p>
+            </li>
+            <li>
+                <p><strong>Librerías y módulos:</strong>Uso de bibliotecas estándar de Python, como math, os, sys, y cómo instalar paquetes externos mediante pip.</p>
+            </li>
+        </ul>
+      </div>
+    </section>
 
-        <!-- desarrollo web con flask -->
-        <section class="section" id="desarrollo web">
-         <h2>Desarrollo Web con Flask
-        </h2>
-            <p><strong>Descripción resumida:</strong></p>
-            <p>Flask es un microframework para desarrollar aplicaciones web con Python. Es "micro" porque proporciona lo esencial para el desarrollo web pero permite al programador agregar extensiones y herramientas adicionales según lo necesite.
-            </p>
-            <div class="highlight">
-                <p><strong>Conceptos Clave::</strong>
-                </p>
-                <ul>
-                    <li><p><strong>Rutas (Routes): </strong>Las rutas definen cómo los usuarios interactúan con la aplicación web, asociando URLs a funciones específicas.
-                    </p>
-                    </li>
-                    <li>
-                        <p><strong>Vistas (Views): </strong>Las vistas son las funciones que responden a las solicitudes HTTP y generan las respuestas que serán enviadas al navegador.</p>
-                    </li>
-                    <li>
-                        <p><strong>Plantillas (Templates): </strong>Flask usa el motor de plantillas Jinja2 para renderizar HTML dinámicamente.</p>
-                    </li>
-                    <li>
-                        <p><strong> Formularios y Datos del Usuario:</strong>:Flask facilita la obtención y procesamiento de datos enviados por los usuarios, ya sea a través de formularios o de métodos GET y POST. </p>
-                    </li>
-                    <li>
-                        <p><strong>Bases de datos:</strong>Flask permite integrarse con bases de datos (como SQLite, MySQL, PostgreSQL) para almacenar y recuperar información.</p>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
+<!-- Arquitectura y fundamentos  -->
+<section class="section" id="Arquitectura_Fundamentos">
+    <h2>Arquitectura y Fundamentos</h2>
+    <p><strong>Descripción resumida:</strong></p>
+    <p>Para comprender mejor Flask, es útil entender los conceptos fundamentales de desarrollo web:</p>
+    <div class="highlight">
+      <p><strong>Modelo-Vista-Controlador (MVC):</strong> Este patrón organiza el código en tres componentes.</p>
+      <ul>
+          <li>
+              <p><strong>Modelo:</strong>  Datos y la lógica para interactuar con las bases de datos.
+              </p>
+          </li>
+          <li>
+              <p><strong>Vista:</strong>La interfaz de usuario (generalmente HTML).</p>
+          </li>
+          <li>
+              <p><strong>Controlador:</strong>Lógica que maneja la entrada del usuario y dirige las acciones a los modelos y vistas.
+              </p>
+          </li>
+          <li>
+              <p><strong>HTTP: </strong> Protocolo de transferencia de hipertexto que es la base de las aplicaciones web. Comprender cómo funcionan las solicitudes (GET, POST, etc.) y respuestas HTTP es esencial para trabajar con Flask.</p>
+          </li>
+          <li>
+              <p><strong>RESTful APIs:</strong>Flask también permite crear APIs RESTful, que son esenciales para construir aplicaciones web modernas.
+              </p>
+          </li>
+      </ul>
+    </div>
+  </section>
 
         <!-- Competencias -->
         <section class="section" id="competencias">
