@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(255, 173, 119);
+}
+nav {
+    background-color: darkseagreen;
+}
+header{
+    background-color: pink;
+}
+main{
+    background-color: cornflowerblue;
+}
+section{
+    background-color: rgb(74, 196, 233);
+}
+footer{
+    background-color: darkseagreen;
+}
